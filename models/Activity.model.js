@@ -6,6 +6,10 @@ const activitySchema = new Schema(
       type: String,
       required: [true, "type is required."],
     },
+    color: {
+      type: String,
+      required: [true, "color is required."],
+    },
     startDate: {
       type: Date,
       required: [true, "startdate is required."],

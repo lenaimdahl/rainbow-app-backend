@@ -12,11 +12,9 @@ const activitySchema = new Schema(
     },
     startDate: {
       type: Date,
-      required: [true, "startdate is required."],
     },
     endDate: {
       type: Date,
-      required: [true, "enddate is required."],
     },
   },
   {

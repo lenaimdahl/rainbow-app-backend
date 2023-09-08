@@ -11,7 +11,7 @@ router.get("/activities", async (req, res) => {
   }
 });
 
-router.post("/new-activity", async (req, res) => {
+router.post("/activities", async (req, res) => {
   try {
     const { type, color } = req.body;
     const savedActivity = await ActivityModel.create({

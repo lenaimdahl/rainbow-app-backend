@@ -13,10 +13,10 @@ router.get("/activities", async (req, res) => {
 
 router.post("/activities", async (req, res) => {
   try {
-    const { type, color } = req.body;
+    const { name, points } = req.body;
     const savedActivity = await ActivityModel.create({
-      type,
-      color,
+      name,
+      points,
     });
     res.status(200).json({ savedActivity });
   } catch (err) {

@@ -2,13 +2,13 @@ const { Schema, model } = require("mongoose");
 
 const activitySchema = new Schema(
   {
-    type: {
+    name: {
       type: String,
-      required: [true, "type is required."],
+      required: [true, "name is required."],
     },
     color: {
-      type: String,
-      required: [true, "color is required."],
+      points: Number,
+      required: [true, "points are required."],
     },
     startDate: {
       type: Date,

@@ -6,8 +6,8 @@ const activitySchema = new Schema(
       type: String,
       required: [true, "name is required."],
     },
-    color: {
-      points: Number,
+    points: {
+      type: Number,
       required: [true, "points are required."],
     },
     startDate: {

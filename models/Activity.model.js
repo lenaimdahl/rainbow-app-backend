@@ -10,12 +10,6 @@ const activitySchema = new Schema(
       type: Number,
       required: [true, "points are required."],
     },
-    startDate: {
-      type: Date,
-    },
-    endDate: {
-      type: Date,
-    },
   },
   {
     timestamps: true,

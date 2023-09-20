@@ -10,6 +10,7 @@ const userSchema = new Schema(
       type: String,
       required: [true, "password is required."],
     },
+    activities: [{ type: Schema.Types.ObjectId, ref: "activity" }],
   },
   {
     timestamps: true,

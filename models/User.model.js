@@ -6,9 +6,9 @@ const userSchema = new Schema(
       type: String,
       required: [true, "name is required."],
     },
-    points: {
-      type: Number,
-      required: [true, "points are required."],
+    password: {
+      type: String,
+      required: [true, "password is required."],
     },
   },
   {

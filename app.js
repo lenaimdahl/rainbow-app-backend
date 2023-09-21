@@ -6,8 +6,6 @@ const app = express();
 
 require("./config")(app);
 
-const { isAuthenticated } = require("./middlewares/jwt.auth");
-
 const indexRoutes = require("./routes/index.routes");
 app.use("/api", indexRoutes);
 

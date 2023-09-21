@@ -25,8 +25,8 @@ router.post("/login", async (req, res) => {
         foundUser.password
       );
       if (passwordMatch) {
-        const { _id, email, username } = foundUser;
-        const payload = { _id, email, username };
+        const { _id, username } = foundUser;
+        const payload = { _id, username };
         const authToken = jwt.sign(payload, process.env.TOKEN_SECRET, {
           algorithm: "HS256",
           expiresIn: "6h",
